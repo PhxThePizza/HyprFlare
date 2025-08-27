@@ -1,3 +1,4 @@
+@import url('RobotoMono.ttf');
 :root {
     --h1-font-size: 4vw; 
     --main-color: #ff00fb;
@@ -7,12 +8,24 @@
     --button-p-font-size: 4.5vh; 
 
 }   
+html {
+    font-family: "Outfit", sans-serif;
+}
 h1 {
     font-size: var(--h1-font-size);
 }
 .title {
     position: relative;
-    top: -10vh
+    top: -10vh;
+    text-shadow:
+    1px 1px 0 black,  
+    -1px 1px 0 black, 
+    1px -1px 0 black, 
+    -1px -1px 0 black;
+
+}
+.settings {
+    display: none;
 }
 body {
     background: var(--starting-page-background);
@@ -68,6 +81,8 @@ body {
     overflow: hidden; 
     text-overflow: ellipsis;
     animation: afthover 0.2s linear 0s 1 forwards;
+    border: #000 3px solid;
+    border-radius: 6px;
 }
 .start button p {
     font-size: var(--button-p-font-size); 
